@@ -24,8 +24,8 @@
                               alert("tel"); 
                         $.ajax({
                             type:"POST",
-                            url:"enviar.php",
-                           /* url:"http://loguz1.260mb.net/envio.php",*/
+                             /*url:"enviar.php",*/
+                           url:"http://loguz1.260mb.net/enviar.php",
                             data:"nombre="+nom+"&apellido="+ap+"&carrera="+car+"&grado="+gra+"&institucion="+inst+"&materias="+mat,
                             success: recepcion
                             });
@@ -48,8 +48,8 @@
                                  var cua=$("#cuarto").val();
                                $.ajax({
                             type:"POST",
-                            url:"enviarC.php",
-                           /* url:"http://loguz1.260mb.net/envio.php",*/
+                           /* url:"enviarC.php",*/
+                            url:"http://loguz1.260mb.net/enviarC.php",
                             data:"materia="+mate+"&primero="+pri+"&segundo="+seg+"&tercero="+ter+"&cuarto="+cua,
                             success: calificaciones
                             });
